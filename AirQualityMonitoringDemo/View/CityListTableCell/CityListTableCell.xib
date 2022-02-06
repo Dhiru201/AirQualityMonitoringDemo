@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CityListTableCell" rowHeight="65" id="KGk-i7-Jjw" customClass="CityListTableCell" customModule="AirQualityMonitoringDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-Ab-a5U">
+                        <rect key="frame" x="11" y="6" width="307" height="53"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQw-fD-GHt">
+                                <rect key="frame" x="8" y="10" width="193" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJq-5D-KEa">
+                                <rect key="frame" x="209" y="3" width="90" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="yVV-Wk-IBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a minute ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zn-eA-srY">
+                                <rect key="frame" x="205.5" y="30.5" width="93.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="rZ2-lp-PPU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zn-eA-srY" firstAttribute="top" secondItem="QJq-5D-KEa" secondAttribute="bottom" id="3kS-4A-Rc2"/>
+                            <constraint firstItem="dQw-fD-GHt" firstAttribute="leading" secondItem="5g3-Ab-a5U" secondAttribute="leading" constant="8" id="75g-ax-lHd"/>
+                            <constraint firstAttribute="trailing" secondItem="QJq-5D-KEa" secondAttribute="trailing" constant="8" id="G3E-KQ-gfp"/>
+                            <constraint firstItem="QJq-5D-KEa" firstAttribute="leading" secondItem="dQw-fD-GHt" secondAttribute="trailing" constant="8" id="RQC-Vv-yhy"/>
+                            <constraint firstItem="3Zn-eA-srY" firstAttribute="trailing" secondItem="QJq-5D-KEa" secondAttribute="trailing" id="Xrg-2c-edg"/>
+                            <constraint firstItem="QJq-5D-KEa" firstAttribute="centerY" secondItem="dQw-fD-GHt" secondAttribute="centerY" constant="-10" id="ZCd-VC-7UW"/>
+                            <constraint firstItem="dQw-fD-GHt" firstAttribute="top" secondItem="5g3-Ab-a5U" secondAttribute="top" constant="10" id="aIo-nV-dDV"/>
+                            <constraint firstItem="dQw-fD-GHt" firstAttribute="centerY" secondItem="5g3-Ab-a5U" secondAttribute="centerY" id="rad-tA-8Ws"/>
+                            <constraint firstAttribute="bottom" secondItem="dQw-fD-GHt" secondAttribute="bottom" constant="10" id="yPm-YN-PLw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5g3-Ab-a5U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="4BL-g2-M7x"/>
+                    <constraint firstItem="5g3-Ab-a5U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="4y1-p9-43l"/>
+                    <constraint firstAttribute="bottom" secondItem="5g3-Ab-a5U" secondAttribute="bottom" constant="6" id="Fd2-et-BrW"/>
+                    <constraint firstAttribute="trailing" secondItem="5g3-Ab-a5U" secondAttribute="trailing" constant="11" id="xNl-Wx-mwV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellContainerView" destination="5g3-Ab-a5U" id="BGX-FM-1id"/>
+                <outlet property="cityLbl" destination="dQw-fD-GHt" id="je4-17-CPW"/>
+                <outlet property="qualityLbl" destination="QJq-5D-KEa" id="9P6-AI-kfk"/>
+                <outlet property="timeLbl" destination="3Zn-eA-srY" id="iN1-T1-1qH"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="120.53571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

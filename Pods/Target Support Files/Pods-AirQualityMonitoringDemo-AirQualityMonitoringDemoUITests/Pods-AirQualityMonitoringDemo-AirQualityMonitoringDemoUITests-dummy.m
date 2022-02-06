@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AirQualityMonitoringDemo_AirQualityMonitoringDemoUITests : NSObject
+@end
+@implementation PodsDummy_Pods_AirQualityMonitoringDemo_AirQualityMonitoringDemoUITests
+@end
